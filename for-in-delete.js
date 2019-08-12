@@ -41,7 +41,14 @@
 
 function showValues( obj ) {
   //Code Here
+  var str1 = '';
+
+  for(var prop in obj) {
+    str1 += obj[prop]
+  }
+  return str1;
 }
+
 
 
 
@@ -54,19 +61,31 @@ function showValues( obj ) {
 */
 
 //Code Here
-
+function greaterThan10(obj) {
+  for(var prop in obj) {
+    if(obj[prop] > 10) {
+      obj[prop] = 0;
+    }
+  }
+  return obj;
+}
 
 
 ////////// PROBLEM 3 //////////
 
 /*
   Write a function called double that takes in an object.
-  Write a for in loop that loops over the object and changes every value to be itself multipled by 2.
+  Write a for in loop that loops over the object and changes every value to be itself multiplied by 2.
   Return the updated object.
 */
 
 //Code Here
-
+function double(obj) {
+  for(var prop in obj) {
+    obj[prop] *= 2;
+  }
+  return obj;
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -80,6 +99,7 @@ function showValues( obj ) {
 */
 
 //Code Here
+
 
 
 
